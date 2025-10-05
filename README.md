@@ -13,11 +13,9 @@ To make this process smoother, I developed a lightweight local tool that lets us
 
 ## Demo
 
-# Excel A欄查詢工具 使用步驟
-
 ## 步驟說明
 
-### 1️⃣ 起始畫面 & 2️⃣ 引入檔案
+### 1️⃣ 起始畫面 & 2️⃣ 引入檔案 & 3️⃣ 選擇欄位
 <table>
 <tr>
 <td>
@@ -32,54 +30,57 @@ To make this process smoother, I developed a lightweight local tool that lets us
 **引入 Excel 檔案**
 
 </td>
-</tr>
-</table>
-
----
-
-### 3️⃣ 選擇欄位 & 4️⃣ 顯示結果
-<table>
-<tr>
 <td>
 
 <img src="https://github.com/user-attachments/assets/80bbfd45-b8dc-4ec7-bdab-3566b43ec71a" width="300" alt="選擇欲搜尋欄位" /><br>
 **選擇欲搜尋欄位**
 
 </td>
+</tr>
+</table>
+
+---
+
+###  4️⃣ 顯示結果 &  5️⃣ 對照資料 
+<table>
+<tr>
+
 <td>
 
 <img src="https://github.com/user-attachments/assets/e494de6c-c6ef-4061-b72e-4ae384175b57" width="300" alt="顯示結果" /><br>
 **顯示結果**
 
 </td>
+<td>
+
+<img src="https://github.com/user-attachments/assets/37b5842b-8b57-4ddf-9e2b-03b9fe2e224e" width="600" alt="對照" /><br>
+**對照資料**
+
+</td>
 </tr>
 </table>
 
 ---
 
-### 5️⃣ 對照資料 & 6️⃣ 多項結果
+###  6️⃣ 多項結果
 <table>
 <tr>
-<td>
 
-<img src="https://github.com/user-attachments/assets/37b5842b-8b57-4ddf-9e2b-03b9fe2e224e" width="300" alt="對照" /><br>
-**對照資料**
-
-</td>
 <td>
 
 <img src="https://github.com/user-attachments/assets/4aa6126e-6994-4b25-94f6-6f63191364c3" width="250" alt="多項結果" /><br>
 **多項結果**
 
 </td>
+<td>
+
+<img src="https://github.com/user-attachments/assets/4d09caa3-4009-420b-afeb-fcd218168627" width="400" alt="結果" /><br>
+
+</td>
 </tr>
 </table>
 
 ---
-
-### 7️⃣ 結果詳情
-<img src="https://github.com/user-attachments/assets/4d09caa3-4009-420b-afeb-fcd218168627" width="400" alt="結果" /><br>
-**查詢結果**
 
 
 ## License & Usage Restrictions
