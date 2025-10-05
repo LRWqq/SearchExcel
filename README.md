@@ -13,7 +13,7 @@ To make this process smoother, I developed a lightweight local tool that lets us
 
 ## Demo
 
-## 步驟說明
+## 步驟說明 (待更新)
 
 ### 1️⃣ 起始畫面 & 2️⃣ 引入檔案 & 3️⃣ 選擇欄位
 <table>
