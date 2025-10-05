@@ -57,7 +57,7 @@ class ExcelSearchApp:
         self.show_all_check.pack(pady=5)
 
         # 啟用快捷鍵說明
-        self.tip = tk.Label(root, text=" 選取欲查詢文字：Ctrl+C -> Ctrl+Alt+S ", fg="blue")
+        self.tip = tk.Label(root, text=" 選取欲查詢文字 -> Ctrl+Alt+S ", fg="blue")
         self.tip.pack(pady=10)
 
         # 註冊快捷鍵
@@ -109,17 +109,38 @@ class ExcelSearchApp:
             messagebox.showwarning("警告", "請先載入 Excel 檔案")
             return
 
-        # 取得目前選取文字
-        keyboard.send("ctrl+c")
-        self.root.after(200, self.do_search)
+        try:
+            # 保存當前剪貼簿內容
+            old_clipboard = pyperclip.paste()
+            
+            # 直接執行複製
+            keyboard.send("ctrl+c")
+            self.root.after(100, lambda: self._complete_search(old_clipboard))
+            
+        except Exception as e:
+            messagebox.showerror("錯誤", f"無法執行搜尋: {e}")
 
-    def do_search(self):
-        text = pyperclip.paste().strip()
-        if not text:
-            messagebox.showwarning("警告", "未取得選取文字")
-            return
+    def _complete_search(self, old_clipboard):
+        try:
+            # 取得新複製的文字
+            text = pyperclip.paste().strip()
+            
+            # 還原剪貼簿
+            if old_clipboard:
+                pyperclip.copy(old_clipboard)
+            
+            if not text:
+                messagebox.showwarning("警告", "未取得選取文字")
+                return
+                
+            # 執行搜尋
+            self.do_search_with_text(text)
+            
+        except Exception as e:
+            messagebox.showerror("錯誤", f"搜尋過程發生錯誤: {e}")
 
-        # Get column index from combobox
+    def do_search_with_text(self, text):
+        # Move search logic here from do_search()
         search_col = ord(self.search_col_var.get()) - ord('A')
         
         # Search in specified column
