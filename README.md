@@ -4,10 +4,11 @@ In the workflow, I noticed my colleagues often need to open Excel repeatedly jus
 
 To make this process smoother, I developed a lightweight local tool that lets users **search an Excel file’s A column from anywhere using a shortcut**, instantly showing the corresponding ABC row.
 
----------------------------------------------------------------------------------------------------------
+====================
+
 Update 2026.5.31
+
 I've developed this concept into a C# base Windows form app and highly customize to really help my colleges. This prototype just keep as a souvenir.
----------------------------------------------------------------------------------------------------------
 
 ## Key Features
 
